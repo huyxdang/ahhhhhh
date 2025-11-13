@@ -15,7 +15,7 @@ DATASET_CONFIGS = {
         'hf_path': 'huyxdang/math-split',
         'question_field': 'problem',
         'answer_field': 'solution',
-        'max_tokens': 1024,
+        'max_tokens': 512,
         'domain': 'MATH'
     },
     'medqa': {
@@ -204,7 +204,7 @@ if __name__ == "__main__":
         "--dataset",
         type=str,
         required=True,
-        choices=['math', 'medqa', 'boolq'],
+        choices=['math', 'medqa'],
         help="Dataset to run inference on"
     )
     parser.add_argument(
