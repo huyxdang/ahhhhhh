@@ -1,0 +1,11 @@
+# Fast inference with vLLM
+vllm>=0.5.0
+
+# Dataset loading and processing
+datasets>=2.14.0
+
+# Model downloading (required by vllm)
+huggingface_hub>=0.20.0
+
+# Note: numpy and tqdm are dependencies of vllm and datasets
+# and will be installed automatically
